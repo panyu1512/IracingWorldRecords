@@ -7,7 +7,13 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gradientColorStops: (theme) => ({
+        red: theme("colors.red.600"),
+        white: theme("colors.gray.600"),
+        blue: theme("colors.blue.600"),
+      }),
+    },
   },
   darkMode: "class",
   plugins: [nextui()],

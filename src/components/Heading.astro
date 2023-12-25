@@ -1,0 +1,21 @@
+---
+interface Props {
+    word1: string;
+    word2: string;
+    word3: string;
+}
+
+const { word1, word2, word3 } = Astro.props;
+---
+
+<h1 class="mb-4 text-3xl text-center font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red to-red">
+        {word1}
+    </span>
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white">
+        {word2}
+    </span>
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue to-blue">
+        {word3}
+    </span>
+</h1>
